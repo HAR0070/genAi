@@ -1,6 +1,8 @@
 FROM python:3.10-slim-bookworm
 
-WORKDIR /app
+WORKDIR /steamlit
+
+COPY requirements.txt . 
 
 RUN apt-get update && apt-get install -y \
     build-essential \
