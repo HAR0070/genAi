@@ -1,8 +1,6 @@
 FROM python:3.10-slim-bookworm
 
-WORKDIR /app
-
-COPY requirements.txt . 
+WORKDIR steamlit/app
 
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -10,6 +8,8 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     git \
     && rm -rf /var/lib/apt/lists/*
+
+RUN git clone https://github.com/HAR0070/genAi.git .
 
 RUN pip3 install -r requirements.txt
 
