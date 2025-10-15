@@ -38,8 +38,8 @@ status_placeholder = st.empty()
 
 st.title("Your Personal Gemini RAG Chatbot 💬")
 
-# GEMINI_API_KEY = "AIzaSyCd_S7ShXDMg0KUYpOxcmBxWBGcbAnJtQo"
-# Qdrant_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.kxkquuJDRrStU1OIKKbNlOCCneBpXyS0TPiosiC4ue4"
+# GEMINI_API_KEY="AIzaSyCd_S7ShXDMg0KUYpOxcmBxWBGcbAnJtQo"
+# Qdrant_API_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.kxkquuJDRrStU1OIKKbNlOCCneBpXyS0TPiosiC4ue4"
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 Qdrant_API_KEY = os.getenv("Qdrant_API_KEY")

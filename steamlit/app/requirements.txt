@@ -8,12 +8,12 @@ protobuf==6.32.1
 streamlit==1.50.0
 
 # Vector DB client
-qdrant_client==1.15.1
+qdrant_client
 
 # Common utilities
 numpy>=1.26.0
 requests>=2.32.0
-lxml==5.4.0
+lxml
 lxml_html_clean == 0.4.3
 
 beautifulsoup4==4.14.2
@@ -23,7 +23,7 @@ python_docx==1.2.0
 uuid6>=2024.1.0   # optional modern UUID library
 
 # Web/text extraction
-trafilatura==2.0.0
+trafilatura
 
 # LangChain & related components
 langchain==0.3.27
