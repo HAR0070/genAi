@@ -5,6 +5,42 @@ import time
 
 'Starting a long computation...'
 
+
+
+# Display chat messages from history on app rerun
+# for message in st.session_state.messages:
+#     with st.chat_message(message["role"]):
+#         st.markdown(message["content"])
+
+# # React to user input
+# if prompt := st.chat_input("What is up?"):
+#     # Display user message in chat message container
+#     with st.chat_message("user"):
+#         st.markdown(prompt)
+#     # Add user message to chat history
+#     st.session_state.messages.append({"role": "user", "content": prompt})
+    
+# # Display assistant response in chat message container
+# with st.chat_message("assistant"):
+#     response = st.write_stream(response_generator())
+# # Add assistant response to chat history
+# st.session_state.messages.append({"role": "assistant", "content": response})
+
+# with st.chat_message("assistant"):
+#     st.write("Hello 👋")
+#     st.bar_chart(np.random.randn(30, 3))
+    
+# text_recived = st.chat_message("assistant")
+# # message.write("Hello my assistant 👋")
+# # message.bar_chart(np.random.randn(40, 8))
+
+# prompt = st.chat_input("Say something")
+# st.session_state.messages.append({"role": "user", "content": prompt})
+# if prompt:
+#     text_recived.write(f"User has sent the following prompt: {prompt}")
+    
+    
+
 # Add a placeholder
 latest_iteration = st.empty()
 bar = st.progress(0)
