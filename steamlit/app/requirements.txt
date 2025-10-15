@@ -1,4 +1,41 @@
 altair
-pandas
-streamlit
 
+
+pandas==2.3.3
+protobuf==6.32.1
+
+# Core app
+streamlit==1.50.0
+
+# Vector DB client
+qdrant_client==1.15.1
+
+# Common utilities
+numpy>=1.26.0
+requests>=2.32.0
+lxml==5.4.0
+lxml_html_clean == 0.4.3
+
+beautifulsoup4==4.14.2
+pydantic==2.12.2
+Pillow==11.3.0
+python_docx==1.2.0
+uuid6>=2024.1.0   # optional modern UUID library
+
+# Web/text extraction
+trafilatura==2.0.0
+
+# LangChain & related components
+langchain==0.3.27
+langchain_community==0.3.31
+langchain_core==0.3.79
+sentence_transformers==5.1.1
+
+# File and temporary handling
+PyMuPDF>=1.24.7
+
+# Google GenAI SDK
+google-genai>=0.3.0
+
+# Optional: HTML cleaning & parsing helpers
+html5lib>=1.1
