@@ -86,7 +86,7 @@ class Chatbot:
         )
 
         #initialize context
-        self.system_prompt = "You are a helpful assistant. Answer only using the provided RAG context. If the answer isn't in the context, say you don't know."
+        self.system_prompt = "You are a helpful, humble, genius, careful, thoughtFull and cautious, assistant. you look deeply into context, If the answer isn't in the context, you specify whats not there, and try to search your own knowledge base to find most appropriate answer according to the context."
 
         # Initialize chat history  if required
         # self.messages = [{"role": "system", "content": self.system_prompt}]
@@ -107,7 +107,7 @@ class Chatbot:
         
     def query_genai(self , prompt):
         
-        context = self.query(prompt , n_points=10)
+        context = self.query(prompt , n_points=25)
         
         # single input that contains system + context + user question
         input_message = f"{self.system_prompt}\n\nRAG CONTEXT:\n{context}\n\nQuestion: {prompt}"
@@ -358,7 +358,7 @@ st.session_state.uploaded_files = st.file_uploader("Upload data", accept_multipl
 
 if st.session_state.uploaded_files:
     st.session_state.database.service_all_docs(st.session_state.uploaded_files)
-    st.session_state.uploaded_files = []
+    del st.session_state.uploaded_files 
     status_placeholder.empty()
 
 web_page = st.text_input("Enter article URL", "")
